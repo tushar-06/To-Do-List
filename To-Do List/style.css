@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-list {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-list h2 {
+    color: #002765;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border-radius: 10px;
+    text-align: center;
+    background: transparent;
+    padding: 15px;
+}
+
+button {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 15px;
+    color: #fff;
+    background-color: blueviolet;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    left: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+
+ul li button {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li button:hover {
+    background: darkred;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
